@@ -1,48 +1,48 @@
 <template>
     <div class="blog">
         <div class="avatar">
-            <div class="card corner">
-                <div class="tx">
-                    <img src="@/assets/img/tx.jpg" alt="The">
+            <div class="card">
+                <div class="avatar-image">
+                    <img src="@/assets/img/tx.jpg" alt="Avatar">
                 </div>
-                <div class="info">
-                    <div class=" name">
+                <div class="user-info">
+                    <div class="user-name">
                         <h1>{{ config.author }}</h1>
                         <hr class="thick-hr">
                     </div>
-                    <div class="introduce">
+                    <div class="user-introduction">
                         <p>{{ config.introduce }}</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="blogpost">
-            <div class="title corner">
+        <div class="blog-post">
+            <div class="post-header">
                 <div>
-                    <div class="img">
-                        <img src="@/assets/img/2.jpg" alt="Preview">
+                    <div class="post-thumbnail">
+                        <img src="@/assets/img/2.jpg" alt="Post Preview">
                     </div>
                 </div>
-                <div class="title-info">
-                    <div class="title-text">
+                <div class="post-details">
+                    <div class="post-title">
                         <div>
                             <h1>文章测试</h1>
                             <hr class="thick-hr">
                         </div>
-                        <div class="meta">
-                            <div class="EventNote">
-
+                        <div class="post-meta">
+                            <div class="meta-item">
+                                <CalendarIcon />
                                 <p>2023-05-05</p>
                             </div>
-                            <div class="EventNote">
-
+                            <div class="meta-item">
+                                <BookmarkDoubleIcon />
                                 <p>分类</p>
                             </div>
-                            <div class="EventNote">
-
+                            <div class="meta-item">
+                                <HashtagIcon />
                                 <p>标签</p>
                             </div>
-                            <div>
+                            <div class="meta-item">
                                 <p>阅读量</p>
                             </div>
                         </div>
@@ -54,29 +54,63 @@
 </template>
 
 <script setup>
+import { CalendarIcon, BookmarkDoubleIcon, HashtagIcon } from 'tdesign-icons-vue-next'
 import config from '@/config/Config';
 </script>
 
 <style scoped>
-.blog {
+.post-meta {
     display: flex;
-    width: 100%;
-    justify-content: center;
-    background: #fff;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
 
 }
 
+.post-meta p {
+    font-size: 16px;
+
+}
+
+.post-meta svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.post-details {
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+
+.post-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-item {
+    display: flex;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+}
+
 .meta {
+    display: flex;
     gap: 10px;
 }
 
 .title-info {
     display: flex;
     height: 100%;
-
 }
 
-.cardzcorner {
+.card-corner {
     height: 100%;
     width: 50%;
 }
@@ -85,23 +119,21 @@ import config from '@/config/Config';
     margin-left: 30px;
 }
 
-.EventNote {
+.event-note {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 5px;
 }
 
-.EventNote p {
+.event-note p {
     margin: 0;
-
 }
 
 .thick-hr {
     border: none;
     height: 5px;
     background-color: rgb(255, 173, 173);
-    margin-top: -15px;
+
 }
 
 .contact {
@@ -111,8 +143,6 @@ import config from '@/config/Config';
 
 .info {
     display: flex;
-    width: auto;
-    height: auto;
     flex-direction: column;
     align-items: center;
     margin: 10px;
@@ -120,21 +150,19 @@ import config from '@/config/Config';
 
 .card {
     width: 290px;
-    height: auto;
     background-color: var(--background-color);
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 4px rgba(194, 194, 194, 0.497);
 }
 
-.blogpost {
+.blog-post {
     box-shadow: 0 0 4px rgba(194, 194, 194, 0.497);
     margin-left: 20px;
 }
 
-.title {
+.post-header {
     width: 1045px;
     height: 400px;
     background-color: var(--background-color);
@@ -142,14 +170,14 @@ import config from '@/config/Config';
     margin-left: 10px;
 }
 
-.title img {
+.post-header img {
     width: 300px;
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.tx img {
+.avatar-image img {
     margin: 15px;
     width: 260px;
     height: 260px;
