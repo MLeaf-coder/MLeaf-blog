@@ -7,28 +7,28 @@ import { HomeIcon, Link1Icon, BookmarkIcon, BookIcon, VerifyIcon } from "tdesign
 <template>
     <div class="header">
         <div class="left">
-            <div class="title">
+            <RouterLink to="/" class="title no_link">
                 <HomeIcon />
                 <p class="h1">{{ config.title }}</p>
-            </div>
+            </RouterLink>
         </div>
         <div class="right">
             <div class="right-item">
-                <RouterLink class="item no_link">
+                <RouterLink to="/collect" class="item no_link">
                     <BookmarkIcon />
                     <p>{{ config.Collect }}</p>
                 </RouterLink>
-                <RouterLink class="item no_link">
+                <RouterLink to="/link" class="item no_link">
                     <Link1Icon />
                     <p>{{ config.Shared }}</p>
                 </RouterLink>
-                <RouterLink class="item no_link">
+                <RouterLink to="/Archiving" class="item no_link">
                     <BookIcon />
                     <p>{{ config.Archive }}</p>
                 </RouterLink>
             </div>
             <div class="right-item">
-                <RouterLink class="item no_link">
+                <RouterLink to="/Mine" class="item no_link">
                     <VerifyIcon size="30px" />
                 </RouterLink>
             </div>

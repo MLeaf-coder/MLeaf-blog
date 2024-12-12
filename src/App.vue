@@ -8,12 +8,8 @@ import Topbar from './components/Topbar.vue';
   <background />
   <div class="main">
     <Topbar />
-
   </div>
-
-
   <RouterView />
-
 </template>
 
 <style scoped>

@@ -31,6 +31,166 @@
             </div>
         </div>
     </div>
+    <div class="post-header">
+        <div>
+            <div class="post-thumbnail">
+                <img src="@/assets/img/2.jpg" alt="Post Preview">
+            </div>
+        </div>
+        <div class="post-details">
+            <div class="post-title">
+                <div>
+                    <h1>文章测试</h1>
+                    <hr class="thick-hr">
+                </div>
+                <div class="post-meta">
+                    <div class="meta-item">
+                        <CalendarIcon />
+                        <p>2023-05-05</p>
+                    </div>
+                    <div class="meta-item">
+                        <BookmarkDoubleIcon />
+                        <p>分类</p>
+                    </div>
+                    <div class="meta-item">
+                        <HashtagIcon />
+                        <p>标签</p>
+                    </div>
+                    <div class="meta-item">
+                        <p>阅读量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-header">
+        <div>
+            <div class="post-thumbnail">
+                <img src="@/assets/img/2.jpg" alt="Post Preview">
+            </div>
+        </div>
+        <div class="post-details">
+            <div class="post-title">
+                <div>
+                    <h1>文章测试</h1>
+                    <hr class="thick-hr">
+                </div>
+                <div class="post-meta">
+                    <div class="meta-item">
+                        <CalendarIcon />
+                        <p>2023-05-05</p>
+                    </div>
+                    <div class="meta-item">
+                        <BookmarkDoubleIcon />
+                        <p>分类</p>
+                    </div>
+                    <div class="meta-item">
+                        <HashtagIcon />
+                        <p>标签</p>
+                    </div>
+                    <div class="meta-item">
+                        <p>阅读量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-header">
+        <div>
+            <div class="post-thumbnail">
+                <img src="@/assets/img/2.jpg" alt="Post Preview">
+            </div>
+        </div>
+        <div class="post-details">
+            <div class="post-title">
+                <div>
+                    <h1>文章测试</h1>
+                    <hr class="thick-hr">
+                </div>
+                <div class="post-meta">
+                    <div class="meta-item">
+                        <CalendarIcon />
+                        <p>2023-05-05</p>
+                    </div>
+                    <div class="meta-item">
+                        <BookmarkDoubleIcon />
+                        <p>分类</p>
+                    </div>
+                    <div class="meta-item">
+                        <HashtagIcon />
+                        <p>标签</p>
+                    </div>
+                    <div class="meta-item">
+                        <p>阅读量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-header">
+        <div>
+            <div class="post-thumbnail">
+                <img src="@/assets/img/2.jpg" alt="Post Preview">
+            </div>
+        </div>
+        <div class="post-details">
+            <div class="post-title">
+                <div>
+                    <h1>文章测试</h1>
+                    <hr class="thick-hr">
+                </div>
+                <div class="post-meta">
+                    <div class="meta-item">
+                        <CalendarIcon />
+                        <p>2023-05-05</p>
+                    </div>
+                    <div class="meta-item">
+                        <BookmarkDoubleIcon />
+                        <p>分类</p>
+                    </div>
+                    <div class="meta-item">
+                        <HashtagIcon />
+                        <p>标签</p>
+                    </div>
+                    <div class="meta-item">
+                        <p>阅读量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-header">
+        <div>
+            <div class="post-thumbnail">
+                <img src="@/assets/img/2.jpg" alt="Post Preview">
+            </div>
+        </div>
+        <div class="post-details">
+            <div class="post-title">
+                <div>
+                    <h1>文章测试</h1>
+                    <hr class="thick-hr">
+                </div>
+                <div class="post-meta">
+                    <div class="meta-item">
+                        <CalendarIcon />
+                        <p>2023-05-05</p>
+                    </div>
+                    <div class="meta-item">
+                        <BookmarkDoubleIcon />
+                        <p>分类</p>
+                    </div>
+                    <div class="meta-item">
+                        <HashtagIcon />
+                        <p>标签</p>
+                    </div>
+                    <div class="meta-item">
+                        <p>阅读量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </template>
 

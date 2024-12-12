@@ -1,11 +1,12 @@
 <template>
     <div class="background">
-        <img :src="backgroundImg" alt="background">
+        <!-- <img :src="backgroundImg" alt="background"> -->
+        <img src="@/assets/img/background/1.png" alt="background">
     </div>
 </template>
 
 <script setup>
-const backgroundImg = "https://bing.img.run/uhd.php";
+// const backgroundImg = "https://bing.img.run/uhd.php";
 </script>
 
 <style scoped>
