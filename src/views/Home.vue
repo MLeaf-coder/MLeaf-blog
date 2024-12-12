@@ -1,5 +1,6 @@
 <script setup>
 import Blog from '@/views/blog.vue';
+import config from '@/config/Config';
 </script>
 
 <template>
@@ -11,10 +12,10 @@ import Blog from '@/views/blog.vue';
             <div class="side">
                 <div class="parcel">
                     <div class="introduce">
-                        <h1>介绍</h1>
+                        <h1>{{ config.introduce }}</h1>
                     </div>
                     <div class="content">
-                        <p>This is a simple notepad where you can record your life, study, work and so on.</p>
+                        <p>{{ config.Message }}</p>
                     </div>
                 </div>
             </div>
@@ -29,8 +30,8 @@ import Blog from '@/views/blog.vue';
         <Blog />
     </div>
 
-</template>
 
+</template>
 
 <style scoped>
 .root {
