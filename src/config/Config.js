@@ -1,7 +1,7 @@
 const config = {
   title: "主页",
   Collect: "收藏",
-  Archive: "归档",
+  Archive: "博客",
   Shared: "友链",
   author: "Mapl eleaf",
   introduce: "介绍",

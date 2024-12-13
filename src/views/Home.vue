@@ -1,5 +1,4 @@
 <script setup>
-import Blog from '@/views/blog.vue';
 import config from '@/config/Config';
 </script>
 
@@ -21,16 +20,17 @@ import config from '@/config/Config';
             </div>
         </div>
     </div>
-    <div class="main">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-    </div>
+
     <div style="display: flex;justify-content: center;width: 100%;">
-        <Blog />
+        <div class="main">
+            <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51018002000145" rel="noreferrer" target="_blank"
+                class="beian-link no_link">
+                <img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png" alt="备案图标" class="beian-logo">
+                川公网安备51018002000145
+            </a>
+            <a href="https://beian.miit.gov.cn/" class="beian-link no_link">蜀ICP备2023029817号-1</a>
+        </div>
     </div>
-
-
 </template>
 
 <style scoped>
@@ -59,75 +59,34 @@ import config from '@/config/Config';
     font-size: var(--side--font-size);
 }
 
-
 .left img {
     width: 440px;
     object-fit: contain;
-
 }
-
 
 .main {
+    margin-top: 60px;
+    width: auto;
+    height: 10px;
     display: flex;
-    position: sticky;
-    z-index: -1;
-    width: 100%;
-    overflow: hidden;
-    height: 250px;
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 10px;
+    /* 添加这行 */
 }
 
-.wave {
-    background: rgb(255, 255, 255);
-    border-radius: 1000% 1000% 0 0;
-    position: absolute;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-    bottom: 0;
-    left: 0;
-    z-index: -8;
-    overflow: hidden;
+.beian-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 16px;
+    color: white;
+    /* 添加这行 */
 }
 
-.wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
-    position: absolute;
-    z-index: -9;
-    overflow: hidden;
-}
-
-.wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
-    padding: absolute;
-    z-index: -10;
-    overflow: hidden;
-}
-
-@keyframes wave {
-    2% {
-        transform: translateX(1);
-    }
-
-    25% {
-        transform: translateX(-25%);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-25%);
-    }
-
-    100% {
-        transform: translateX(1);
-    }
+.beian-logo {
+    margin-right: 8px;
+    height: 20px;
+    /* 调整图标高度 */
 }
 </style>

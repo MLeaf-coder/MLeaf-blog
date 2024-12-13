@@ -38,14 +38,15 @@ import { HomeIcon, Link1Icon, BookmarkIcon, BookIcon, VerifyIcon } from "tdesign
 
 <style scoped>
 .header {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--background-color);
+    /* background: var(--background-color); */
     width: 85%;
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3); */
     font-size: var(--header-font-size);
 }
 
@@ -55,6 +56,7 @@ import { HomeIcon, Link1Icon, BookmarkIcon, BookIcon, VerifyIcon } from "tdesign
     align-items: center;
     padding: 5px;
     gap: 5px;
+    color: #fff;
 }
 
 .right {
@@ -71,6 +73,7 @@ import { HomeIcon, Link1Icon, BookmarkIcon, BookIcon, VerifyIcon } from "tdesign
         align-items: center;
         padding: 5px;
         gap: 5px;
+        color: #fff;
     }
 
     .item:hover {

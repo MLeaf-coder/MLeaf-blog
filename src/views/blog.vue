@@ -1,15 +1,15 @@
 <template>
     <div class="parcel">
-        <div class="blog">
-            <parcel />
-            <div class="blog-post">
+        <!-- <div class="blog">
+            <parcel /> -->
+        <!-- <div class="blog-post">
                 <post />
-            </div>
-        </div>
-        <div>
-            <bottom />
-        </div>
+            </div> -->
     </div>
+    <!-- <div>
+        <bottom />
+    </div> -->
+    <!-- </div> -->
 </template>
 
 <script setup>

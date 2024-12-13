@@ -1,3 +1,3 @@
 <template>
-    <div class="archiving">归档</div>
+    <div class="archiving">博客</div>
 </template>
